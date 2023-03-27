@@ -123,4 +123,17 @@ Up to this point, Tailwind renderer should be working like normal.
 
 A side note is the `content` field in `tailwind.config.js` file. The field should cover all templates that uses Tailwinds.
 
+---
+Additional notes:
+In case you want to use plug-in, just install the plug-in and update the `tailwind.config.js`
 
+Example:
+```shell
+npm install daisyui
+```
+then add the following to `tailwind.config.js`.
+```js
+  plugins: [require("daisyui")],
+```
+
+---
