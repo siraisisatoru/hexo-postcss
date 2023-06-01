@@ -97,9 +97,11 @@ module.exports = {
 ```
 .
 ├── ...
-├── scripts
-│   ├── css
-│   │   └── main.css
+├── themes
+│   └── <yourtheme>
+│       └── source
+│           └── css
+│               └── main.css
 ├── scripts
 └── ...
 ```
