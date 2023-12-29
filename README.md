@@ -1,24 +1,41 @@
 # hexo-tailwindcss-script
-The repository is a user script for apply Tailwindcss render within HEXO framework.
+The repository is a user script for applying Tailwindcss render within HEXO framework.
 
-For some reason, I tried to use tailwind in my Hexo blog. I did some research and found one [repo](https://github.com/bennyxguo/hexo-renderer-tailwindcss) that act as a hexo renderer for Tailwindcss. Unfortunately, the repo didn't update for two years and I kept getting error due to outdated postcss js. To fix the problem, I cloned the library and put them into scripts folder.
+For some reason, I tried to use Tailwind in my Hexo blog. I did some research and found one [repo](https://github.com/bennyxguo/hexo-renderer-tailwindcss) that acts as a HEXO renderer for Tailwindcss. Unfortunately, the repo didn't update for two years and I kept getting errors due to outdated postcss js. To fix the problem, I cloned the library and put it into the scripts folder.
 
 ---
-1. Use node js install modules.
+1. Use node js to install modules.
 ```shell
-$ npm install postcss postcss-import postcss-load-config tailwindcss
+$ npm install postcss postcss-import postcss-load-config tailwindcss autoprefixer
 ```
 
-At the point the repo get published, the versions of each library are listed below:
-
+At the point the repo gets published, the versions of each library are listed below:
 ``` json
+    "autoprefixer": "^10.4.16",
     "postcss": "^8.4.21",
     "postcss-import": "^15.1.0",
     "postcss-load-config": "^4.0.1",
     "tailwindcss": "^3.2.7"
 ```
 
-2. Download all files in this repo and put under `scripts/` or `themes/<yourtheme>/scripts/` folder
+---
+update 30-12-2023
+Just verified and tested the script, and it still works. The most recent versions are as follows:
+
+```json 
+    "postcss": "^8.4.32",
+    "postcss-import": "^15.1.0",
+    "postcss-load-config": "^5.0.2",
+    "tailwindcss": "^3.4.0"
+```
+
+
+
+---
+
+
+
+2. Download all files in this repo and put them under `scripts/`` or `themes/<yourtheme>/scripts/` folder
 
 Example:
 ```
@@ -31,7 +48,7 @@ Example:
 └── ...
 ```
 
-3. Create `.postcssrc.js` at your Hexo root folder
+3. Create `.postcssrc`.js` in your Hexo root folder
 
 Example:
 ```
@@ -121,13 +138,13 @@ module.exports = {
 
 ---
 
-Up to this point, Tailwind renderer should be working like normal. 
+Up to this point, the Tailwind renderer should be working like normal. 
 
-A side note is the `content` field in `tailwind.config.js` file. The field should cover all templates that uses Tailwinds.
+A side note is the `content` field in `tailwind.config.js` file. The field should cover all templates that use Tailwinds.
 
 ---
 Additional notes:
-In case you want to use plug-in, just install the plug-in and update the `tailwind.config.js`
+In case you want to use plug-ins, just install the plug-in and update the `tailwind.config.js`
 
 Example:
 ```shell
