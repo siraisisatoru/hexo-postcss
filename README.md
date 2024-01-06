@@ -35,7 +35,7 @@ Just verified and tested the script, and it still works. The most recent version
 
 
 
-2. Download all files in this repo and put them under `scripts/`` or `themes/<yourtheme>/scripts/` folder
+2. Download all files in this repo and put them under `scripts/` or `themes/<yourtheme>/scripts/` folder
 
 Example:
 ```
@@ -48,7 +48,7 @@ Example:
 └── ...
 ```
 
-3. Create `.postcssrc`.js` in your Hexo root folder
+3. Create `.postcssrc.js` in your Hexo root folder
 
 Example:
 ```
