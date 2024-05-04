@@ -1,0 +1,35 @@
+{
+  "name": "hexo-postcss",
+  "version": "1.0.0",
+  "description": "A simple hexo plugin for postcss rendering",
+  "main": "index.js",
+  "directories": {
+    "lib": "lib"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/siraisisatoru/hexo-postcss.git"
+  },
+  "keywords": [
+    "postcss",
+    "hexo",
+    "postcss-plugin",
+    "hexo-renderer",
+    "tailwindcss"
+  ],
+  "author": "Siraisisatoru",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/siraisisatoru/hexo-postcss/issues"
+  },
+  "homepage": "https://github.com/siraisisatoru/hexo-postcss#readme",
+  "dependencies": {
+    "autoprefixer": "^10.4.19",
+    "postcss": "^8.4.38",
+    "postcss-import": "^16.1.0",
+    "postcss-load-config": "^5.1.0"
+  }
+}
