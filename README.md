@@ -1,4 +1,5 @@
 # hexo-postcss
+
 [![Publish Package to npmjs](https://github.com/siraisisatoru/hexo-postcss/actions/workflows/publish.yml/badge.svg)](https://github.com/siraisisatoru/hexo-postcss/actions/workflows/publish.yml)
 
 A simple hexo plugin for postcss rendering.
@@ -39,9 +40,7 @@ Example:
 module.exports = {
     from: undefined,
     plugins: {
-      'postcss-import': {},
       '<your plugins>': {},
-      'autoprefixer': {},
     }
   }
 ```
@@ -53,13 +52,15 @@ Follow `How to install` first. The steps below are identical to the manual insta
 1. Use node js to install modules.
 
 ```shell
-$ npm install tailwindcss
+$ npm install tailwindcss autoprefixer postcss-import
 ```
 
 At the point of this guide creation, the packages' versions are listed as follows.
 
 ```json
-    "tailwindcss": "^3.4.3"
+"autoprefixer": "^10.4.19",
+"postcss-import": "^16.1.0",
+"tailwindcss": "^3.4.3",
 ```
 
 2. Modify `.postcssrc.js`
