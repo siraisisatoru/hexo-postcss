@@ -1,4 +1,5 @@
 # hexo-postcss
+[![Publish Package to npmjs](https://github.com/siraisisatoru/hexo-postcss/actions/workflows/publish.yml/badge.svg)](https://github.com/siraisisatoru/hexo-postcss/actions/workflows/publish.yml)
 
 A simple hexo plugin for postcss rendering.
 
