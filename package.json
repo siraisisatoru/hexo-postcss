@@ -31,5 +31,8 @@
     "postcss": "^8.4.38",
     "postcss-import": "^16.1.0",
     "postcss-load-config": "^5.1.0"
+  },
+  "publishConfig": {
+    "@siraisisatoru:registry": "https://npm.pkg.github.com"
   }
 }
