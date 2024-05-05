@@ -165,4 +165,4 @@ Any new ideas want to add to the project are welcome. Please submit a pull reque
 
 # License
 
-The original library (hexo-renderer-tailwindcss)[https://github.com/bennyxguo/hexo-renderer-tailwindcss] is using MIT license for their project. MIT license is applied for this repository.
+The original library [hexo-renderer-tailwindcss](https://github.com/bennyxguo/hexo-renderer-tailwindcss) is using MIT license for their project. MIT license is applied for this repository.
