@@ -1,6 +1,6 @@
 {
   "name": "hexo-postcss",
-  "version": "2.0.0",
+  "version": "2.1.0",
   "description": "A simple hexo plugin for postcss rendering",
   "main": "index.js",
   "directories": {
@@ -27,7 +27,7 @@
   },
   "homepage": "https://github.com/siraisisatoru/hexo-postcss#readme",
   "dependencies": {
-    "postcss": "^8.4.38",
+    "postcss": "^8.5.3",
     "postcss-load-config": "^5.1.0"
   },
   "publishConfig": {
