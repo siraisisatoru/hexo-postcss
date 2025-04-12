@@ -45,14 +45,61 @@ module.exports = {
   }
 ```
 
-# Using it with TailwindCSS
+# Using it with TailwindCSS v4
+
+Follow `How to install` first. The steps below are identical to the manual installation guide. This section is a wrapper of the [official document](https://tailwindcss.com/docs/installation/using-postcss). In tailwind version 4, they changed the way to set configurations and thus less installation needed. (Don't even need `tailwind.config.js`)
+
+1. Use node js to install modules.
+
+```shell
+$ npm install tailwindcss @tailwindcss/postcss
+```
+
+2. Modify `.postcssrc.js`
+
+```
+module.exports = {
+    from: undefined,
+    plugins: {
+        "@tailwindcss/postcss": {},
+    }
+  }
+```
+
+3. Add `main.css` to your `themes/<yourtheme>/source/css/` folder.
+
+```
+.
+├── ...
+├── themes
+│   └── <yourtheme>
+│       └── source
+│           └── css
+│               └── main.css
+├── scripts
+└── ...
+```
+
+4. Add the following to `main.css`
+
+```css
+@import "tailwindcss";
+```
+
+5. Add the `main.css` to your template (possibly in `head.ejs`).
+
+```js
+    <%- css(['css/main.css']) %>
+```
+
+# Using it with TailwindCSS v3
 
 Follow `How to install` first. The steps below are identical to the manual installation guide.
 
 1. Use node js to install modules.
 
 ```shell
-$ npm install tailwindcss autoprefixer postcss-import
+$ npm install tailwindcss@3 autoprefixer postcss-import
 ```
 
 At the point of this guide creation, the packages' versions are listed as follows.
@@ -153,10 +200,20 @@ Example:
 npm install daisyui
 ```
 
-then add the following to `tailwind.config.js`.
+For TailwindCSS v3:
+Add the following to `tailwind.config.js`.
 
 ```js
   plugins: [require("daisyui")],
+```
+
+For TailwindCSS v4:
+Modify the `main.css`
+```css
+@import "tailwindcss";
+@plugin "daisyui" {
+    themes: light --default;
+}
 ```
 
 ---
