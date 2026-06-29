@@ -3,15 +3,12 @@ updates:
     # Keep npm dependencies up to date
     - package-ecosystem: "npm"
       directory: "/"
-      target-branch: master
+      target-branch: main
       schedule:
-          interval: "daily"
+          interval: "weekly"
           time: "00:00"
           timezone: "Australia/Sydney"
       pull-request-branch-name:
           separator: "-"
       labels:
           - "Dependabot"
-      ignore:
-          - dependency-name: "*"
-            update-types: ["version-update:semver-major"]
